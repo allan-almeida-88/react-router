@@ -11,6 +11,7 @@ import navegacaoNavLink from "./navegacaoComNavLink";
 import Pagina404 from "../pages/shared/pagina404";
 import routasPagina404 from './routa404'
 import paramentrosDeRota from './parametrosDeRota'
+import parametrosDeBusca from './parametrosDeBusca'
 
 
 const routes = createBrowserRouter(createRoutesFromElements(
@@ -19,6 +20,7 @@ const routes = createBrowserRouter(createRoutesFromElements(
         {navegacaoNavLink}
         {routasPagina404}
         {paramentrosDeRota}
+        {parametrosDeBusca}
 
         {/* <Route path="*" element={<Pagina404 />} /> */}
         
