@@ -9,7 +9,6 @@ const links = [
     {url: '/pagina404/inexistente'},
 ]
 
-
 const routes = (
     <Route path="pagina404">
         <Route index element={<Inicio links={links}/>} />

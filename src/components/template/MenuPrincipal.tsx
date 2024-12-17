@@ -9,7 +9,7 @@ const itens: MenuItem[] = [
     {titulo: 'Tipos de Links', url:"/tiposDeLinks", icone: <IconLayoutNavbarCollapse/>},
     {titulo: 'Navegação com NavLink', url: '/navegacaoComNavLink', icone: <IconDirectionSign />},
     {titulo: 'Página 404', url: '/pagina404', icone:<IconFileAlert />},
-    {titulo: 'Parâmentro de routas', url: '/parametroDeRoutas', icone:<IconRoute />}
+    {titulo: 'Parâmentro de routas', url: '/parametrosDeRota', icone:<IconRoute />}
 ];
 
 export default function MenuPrincipal() {
