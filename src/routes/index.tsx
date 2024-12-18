@@ -6,27 +6,30 @@ import reportWebVitals from "../reportWebVitals";
 import Layout from '../components/template/Layout'
 import MenuTiposDeLinks from '../components/tiposDeLinks/Menu'
 import NavegacaoComNavLink from '../components/navegacaoComNavLink/Menu'
-import TipoDeLinks from "./tiposDeLinks";
-import navegacaoNavLink from "./navegacaoComNavLink";
-import Pagina404 from "../pages/shared/pagina404";
+import routeTipoDeLinks from "./tiposDeLinks";
+import routeNavegacaoNavLink from "./navegacaoComNavLink";
+import routePagina404 from "../pages/shared/pagina404";
 import routasPagina404 from './routa404'
-import paramentrosDeRota from './parametrosDeRota'
-import parametrosDeBusca from './parametrosDeBusca'
-import entendendoUseLocation from './entendendoUseLocation'
-import entendentoActions from './entendendoActions'
+import routeParamentrosDeRota from './parametrosDeRota'
+import routeParametrosDeBusca from './parametrosDeBusca'
+import routeEntendendoUseLocation from './entendendoUseLocation'
+import routeEntendentoActions from './entendendoActions'
+import routeEntendentoLoader from './entendendoLoader'
+import Pagina404 from "../pages/shared/pagina404";
 
 
 const routes = createBrowserRouter(createRoutesFromElements(
     <Route path="/" element={<Layout/>}>
-        {TipoDeLinks}
-        {navegacaoNavLink}
+        {routeTipoDeLinks}
+        {routeNavegacaoNavLink}
         {routasPagina404}
-        {paramentrosDeRota}
-        {parametrosDeBusca}
-        {entendendoUseLocation}
-        {entendentoActions}
+        {routeParamentrosDeRota}
+        {routeParametrosDeBusca}
+        {routeEntendendoUseLocation}
+        {routeEntendentoActions}
+        {routeEntendentoLoader}
 
-        {/* <Route path="*" element={<Pagina404 />} /> */}
+        <Route path="*" element={<Pagina404 />} />
         
     </Route>
 ))
