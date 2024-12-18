@@ -12,6 +12,8 @@ import Pagina404 from "../pages/shared/pagina404";
 import routasPagina404 from './routa404'
 import paramentrosDeRota from './parametrosDeRota'
 import parametrosDeBusca from './parametrosDeBusca'
+import entendendoUseLocation from './entendendoUseLocation'
+import entendentoActions from './entendendoActions'
 
 
 const routes = createBrowserRouter(createRoutesFromElements(
@@ -21,6 +23,8 @@ const routes = createBrowserRouter(createRoutesFromElements(
         {routasPagina404}
         {paramentrosDeRota}
         {parametrosDeBusca}
+        {entendendoUseLocation}
+        {entendentoActions}
 
         {/* <Route path="*" element={<Pagina404 />} /> */}
         

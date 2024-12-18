@@ -1,4 +1,4 @@
-import { IconDirectionSign, IconFileAlert, IconLayoutNavbar, IconLayoutNavbarCollapse, IconMenu, IconRoute, IconSearch, IconX } from "@tabler/icons-react";
+import { IconActivity, IconDirectionSign, IconFileAlert, IconForms, IconLayoutNavbar, IconLayoutNavbarCollapse, IconMenu, IconRoute, IconSearch, IconX } from "@tabler/icons-react";
 import { MenuItem } from "../../data/models/MenuItem";
 import Logo from "./Logo";
 import MenuPrincipalItem from "./MenuPrincipalItem";
@@ -10,7 +10,9 @@ const itens: MenuItem[] = [
     {titulo: 'Navegação com NavLink', url: '/navegacaoComNavLink', icone: <IconDirectionSign />},
     {titulo: 'Página 404', url: '/pagina404', icone:<IconFileAlert />},
     {titulo: 'Parâmentro de routas', url: '/parametrosDeRota', icone:<IconRoute />},
-    {titulo: 'Parâmentros de busca', url: '/parametrosDeBusca', icone: <IconSearch />}
+    {titulo: 'Parâmentros de busca', url: '/parametrosDeBusca', icone: <IconSearch />},
+    {titulo: 'Formulário useLocation', url: '/entendendoUseLocation', icone: <IconForms />},
+    {titulo: 'Ententedendo Actions', url: '/entendendoActions', icone: <IconActivity />},
 ];
 
 export default function MenuPrincipal() {
