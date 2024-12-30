@@ -1,4 +1,7 @@
-import { IconActivity, IconDirectionSign, IconFileAlert, IconForms, IconLayoutNavbar, IconLayoutNavbarCollapse, IconLoader, IconMenu, IconRefreshAlert, IconRoute, IconSearch, IconX } from "@tabler/icons-react";
+import { IconActivity, 
+    IconDirectionSign, IconFileAlert, IconForms, IconLayoutNavbar, 
+    IconLayoutNavbarCollapse, IconLoader, IconMenu, IconRefreshAlert, IconRoute, 
+    IconRouteOff, IconRouterOff, IconSearch, IconShare, IconX } from "@tabler/icons-react";
 import { MenuItem } from "../../data/models/MenuItem";
 import Logo from "./Logo";
 import MenuPrincipalItem from "./MenuPrincipalItem";
@@ -13,7 +16,11 @@ const itens: MenuItem[] = [
     {titulo: 'Parâmentros de busca', url: '/parametrosDeBusca', icone: <IconSearch />},
     {titulo: 'Formulário useLocation', url: '/entendendoUseLocation', icone: <IconForms />},
     {titulo: 'Ententedendo Actions', url: '/entendendoActions', icone: <IconActivity />},
-    {titulo: 'Ententedendo Loader', url: '/entendendoLoaders', icone: <IconRefreshAlert />},
+    {titulo: 'Ententedendo Loader', url: '/entendendoLoaders', icone: <IconLoader />},
+    {titulo: 'Lidando com erros do Loader', url: '/lidandoComErrosDoLoader', icone: <IconRefreshAlert />},
+    {titulo: 'Entendendo Loader com Response', url: '/entendendoLoaderComResponse', icone: <IconRefreshAlert />},
+    {titulo: 'Entendendo useRouteError', url: '/entendendoUseRouteError', icone: <IconRouterOff />},
+    {titulo: 'Usando Loader de outra routa', url: '/usandoLoaderDeOutraRota', icone: <IconShare />},
 ];
 
 export default function MenuPrincipal() {

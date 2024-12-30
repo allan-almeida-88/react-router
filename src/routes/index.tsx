@@ -15,8 +15,11 @@ import routeParametrosDeBusca from './parametrosDeBusca'
 import routeEntendendoUseLocation from './entendendoUseLocation'
 import routeEntendentoActions from './entendendoActions'
 import routeEntendentoLoader from './entendendoLoader'
-import Pagina404 from "../pages/shared/pagina404";
-
+import Pagina404 from "../pages/shared/pagina404"
+import routeLidandoComErrosDoLoader from './lidandoComErrosDoLoader'
+import routeEntendendoLoaderComResponse from "./entendendoLoaderComResponse";
+import entendendoUseRouteError from "./entendendoUseRouteError"
+import usandoLoaderDeOutraRoutes from './usandoLoaderDeOutraRoute'
 
 const routes = createBrowserRouter(createRoutesFromElements(
     <Route path="/" element={<Layout/>}>
@@ -28,6 +31,10 @@ const routes = createBrowserRouter(createRoutesFromElements(
         {routeEntendendoUseLocation}
         {routeEntendentoActions}
         {routeEntendentoLoader}
+        {routeLidandoComErrosDoLoader}
+        {routeEntendendoLoaderComResponse}
+        {entendendoUseRouteError}
+        {usandoLoaderDeOutraRoutes}
 
         <Route path="*" element={<Pagina404 />} />
         

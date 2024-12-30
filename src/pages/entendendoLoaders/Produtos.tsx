@@ -31,5 +31,4 @@ export async function getProdutos() {
 }
 
 async function getProduto(id) {
-    console.log()
 }

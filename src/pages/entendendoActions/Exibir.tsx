@@ -3,7 +3,6 @@ import Pagina from "../../components/template/Pagina";
 
 export default function Exibir() {
     const data = useActionData()
-    console.log(data)
     return (
         <Pagina titulo="Dados inseridos no formulário">
             <p className="text-xl my-10">{data.nome} tem {data.idade} anos</p>
