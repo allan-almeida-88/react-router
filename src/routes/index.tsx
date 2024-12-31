@@ -20,6 +20,8 @@ import routeLidandoComErrosDoLoader from './lidandoComErrosDoLoader'
 import routeEntendendoLoaderComResponse from "./entendendoLoaderComResponse";
 import entendendoUseRouteError from "./entendendoUseRouteError"
 import usandoLoaderDeOutraRoutes from './usandoLoaderDeOutraRoute'
+import EntendendoDefer from './entendendoDefer'
+import routeEntendendoUseFetcher from "./entendendoUseFetcher";
 
 const routes = createBrowserRouter(createRoutesFromElements(
     <Route path="/" element={<Layout/>}>
@@ -35,6 +37,8 @@ const routes = createBrowserRouter(createRoutesFromElements(
         {routeEntendendoLoaderComResponse}
         {entendendoUseRouteError}
         {usandoLoaderDeOutraRoutes}
+        {EntendendoDefer}
+        {routeEntendendoUseFetcher}
 
         <Route path="*" element={<Pagina404 />} />
         
